@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionPrefix>0.0.12</VersionPrefix>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <DebugType>portable</DebugType>
+    <AssemblyName>SprayChronicle.Testing</AssemblyName>
+    <PackageId>SprayChronicle.Testing</PackageId>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet;net35</PackageTargetFallback>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../SprayChronicle.CommandHandling/SprayChronicle.CommandHandling.csproj" />
+    <ProjectReference Include="../SprayChronicle.EventSourcing/SprayChronicle.EventSourcing.csproj" />
+    <ProjectReference Include="../SprayChronicle.Persistence.Memory/SprayChronicle.Persistence.Memory.csproj" />
+    <ProjectReference Include="../SprayChronicle.Projecting/SprayChronicle.Projecting.csproj" />
+    <ProjectReference Include="../SprayChronicle.QueryHandling/SprayChronicle.QueryHandling.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="4.9.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="xunit" Version="2.2.0-beta5-build3474" />
+    <PackageReference Include="Autofac" Version="4.2.1" />
+    <PackageReference Include="Microsoft.DotNet.InternalAbstractions" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>

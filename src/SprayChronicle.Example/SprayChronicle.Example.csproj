@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <DebugType>portable</DebugType>
+    <AssemblyName>SprayChronicle.Example</AssemblyName>
+    <PackageId>SprayChronicle.Example</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../SprayChronicle.CommandHandling/SprayChronicle.CommandHandling.csproj" />
+    <ProjectReference Include="../SprayChronicle.EventHandling/SprayChronicle.EventHandling.csproj" />
+    <ProjectReference Include="../SprayChronicle.EventSourcing/SprayChronicle.EventSourcing.csproj" />
+    <ProjectReference Include="../SprayChronicle.Persistence.Memory/SprayChronicle.Persistence.Memory.csproj" />
+    <ProjectReference Include="../SprayChronicle.Projecting/SprayChronicle.Projecting.csproj" />
+    <ProjectReference Include="../SprayChronicle.QueryHandling/SprayChronicle.QueryHandling.csproj" />
+    <ProjectReference Include="../SprayChronicle.Server.Http/SprayChronicle.Server.Http.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.2.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.4.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.4.0" />
+  </ItemGroup>
+
+</Project>

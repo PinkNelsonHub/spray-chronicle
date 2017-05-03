@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <DebugType>portable</DebugType>
+    <AssemblyName>SprayChronicle.Example.Server</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>SprayChronicle.Example.Server</PackageId>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <RuntimeFrameworkVersion>1.1.0</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../SprayChronicle.Example/SprayChronicle.Example.csproj" />
+    <ProjectReference Include="../SprayChronicle.Server.Http/SprayChronicle.Server.Http.csproj" />
+    <ProjectReference Include="../SprayChronicle.Persistence.Memory/SprayChronicle.Persistence.Memory.csproj" />
+    <ProjectReference Include="../SprayChronicle.Persistence.Mongo/SprayChronicle.Persistence.Mongo.csproj" />
+    <ProjectReference Include="../SprayChronicle.Persistence.Ouro/SprayChronicle.Persistence.Ouro.csproj" />
+  </ItemGroup>
+
+</Project>
